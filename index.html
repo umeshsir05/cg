@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>छत्तीसगढ़ सामान्य ज्ञान (CG GK)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Clean Hindi Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-left">
+            <button class="hamburger-btn" id="menuToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h1 class="logo-text">छत्तीसगढ़ <span>GK</span></h1>
+        </div>
+        <div class="nav-right">
+            <button class="theme-btn" id="themeToggle" aria-label="Toggle Dark Mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar Overlay & Drawer -->
+    <div class="overlay" id="overlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>अध्याय सूची (20)</h2>
+            <button class="close-btn" id="closeSidebar">&times;</button>
+        </div>
+        <nav class="chapter-list" id="chapterNav">
+            <!-- Chapters dynamically injected or loaded from JS -->
+        </nav>
+    </aside>
+
+    <!-- Main Practice Workspace -->
+    <main class="content-container">
+        <div class="chapter-banner">
+            <h2 id="currentChapterTitle">1. छत्तीसगढ़ का भौगोलिक परिचय</h2>
+            <span class="quiz-status" id="quizStatus">0 प्रश्न उपलब्ध</span>
+        </div>
+
+        <section class="quiz-card" id="quizContainer">
+            <div id="questionArea">
+                <!-- MCQ items will be rendered here -->
+            </div>
+            
+            <div class="nav-actions">
+                <button class="action-btn" id="prevBtn" disabled>पिछला</button>
+                <button class="action-btn" id="nextBtn">अगला</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
